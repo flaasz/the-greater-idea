@@ -66,10 +66,10 @@ $('.footer-activator').hover(function () {
 
 $(document).on('mousemove', function (e) {
     $('body').css({
-        'cursor' : 'default'
+        'cursor': 'default'
     });
 
-    if(data) {
+    if (data) {
         var xPos = e.pageX - 5;
         var yPos = e.pageY - 5;
         // console.log(xPos, yPos);
@@ -84,3 +84,36 @@ $(document).on('mousemove', function (e) {
     }
 
 });
+
+
+$('.footer-activator').on('click', function () {
+    var footer = document.getElementById("footer");
+    var activator = document.getElementsByClassName("footer-activator")[0];
+    var overlay = document.getElementsByClassName("footer-overlay")[0];
+
+    if (footer.classList.contains("active")) {
+        footer.classList.remove("active");
+        activator.classList.remove("active");
+        overlay.classList.remove("active");
+        $('.feature').removeClass('blackened');
+    } else {
+        data = false;
+        footer.classList.add("active");
+        activator.classList.add("active");
+        overlay.classList.add("active");
+        $('.feature').addClass('blackened');
+    }
+})
+
+$('.footer-overlay').on('click', function () {
+    var footer = document.getElementById("footer");
+    var activator = document.getElementsByClassName("footer-activator")[0];
+    var overlay = document.getElementsByClassName("footer-overlay")[0];
+
+    footer.classList.remove("active");
+    activator.classList.remove("active");
+    overlay.classList.remove("active");
+    $('.feature').removeClass('blackened');
+
+
+})
