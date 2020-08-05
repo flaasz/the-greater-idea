@@ -1,0 +1,151 @@
+   <!--About section-->
+   <section class="about overlay main" id="store">
+      <div class="background-img img3"></div>
+      <!--Container-->
+      <div class="container">
+         <!--Row-->
+         <div class="row vertical-align">
+            <div class="col-lg-5 col-md-12">
+               <div class="front-p">
+                  <h1 class="uppercase text-white">Awesome stable servers.</h1>
+                  <p class=" w-93">Our staff makes sure we provide you free servers that work great, so all you have to
+                     do is have fun!</p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="block-content text-md-right front-p">
+                  <a class="btn btn-primary uppercase with-ico border-2" href="https://stats.moddedminecraft.net/"><i
+                        class="fa fa-area-chart"></i>Check server stats!</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <!--End row-->
+      </div>
+      <!--End container-->
+   </section>
+   <!--End about section-->
+   <section class="about overlay main alt" id="store">
+      <div class="background-img img4"></div>
+      <!--Container-->
+      <div class="container">
+         <!--Row-->
+         <div class="row vertical-align">
+            <div class="col-md-4">
+               <div class="block-content text-md-left front-p">
+                  <a class="btn btn-primary uppercase with-ico border-2" href="https://stats.moddedminecraft.net/"><i
+                        class="fa fa-area-chart"></i>Check server stats!</a>
+               </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+               <div class="front-p">
+                  <h1 class="uppercase text-white">Helpful massive discord.</h1>
+                  <p class=" w-93">Our Discord has over 4000 humble and friendly users, custom bot and a lot of helpful
+                     stuff. Come and check it out!</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <!--End row-->
+      </div>
+      <!--End container-->
+   </section>
+   <!--End about section-->
+
+   <!--News section-->
+   <section class="news main bg-secondary" id="news">
+      <!--Container-->
+      <div class="container">
+         <!--Row-->
+         <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-9">
+               <div class="block-content gap-one-bottom-md text-center">
+                  <div class="block-title">
+                     <h1 class="uppercase">Updates</h1>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--End row-->
+      </div>
+      <!--End container-->
+      <!--Container-->
+      <div class="container">
+         <ul class="news-list">
+            <li class="row align-items-center justify-content-around">
+               <div class="col-12 col-md-6 order-md-2">
+                  <div class="block-content">
+                     <a href="#"><img alt="" class="img-fluid animated" src="img/6.jpg"></a>
+                  </div>
+               </div>
+               <div class="col-12 col-md-6 col-lg-5 order-md-1">
+                  <div class="block-content text-left">
+                     <span class="mb-2 opc-70">May 17, 2020</span>
+                     <h2>Update 0.1</h2>
+                     <p class="lead">New discord bot on our Discord Server and new games to play with people.</p>
+                  </div>
+               </div>
+            </li>
+            <li class="row align-items-center justify-content-around">
+               <div class="col-12 col-md-6 order-1">
+                  <div class="block-content">
+                     <a href="#"><img alt="" class="img-fluid animated" src="img/6.jpg"></a>
+                  </div>
+
+            </li>
+         </ul>
+      </div>
+      <!--End container-->
+   </section>
+   <!--End news section-->
+   <!--Contact section-->
+   <section class="contact main bg-secondary" id="contact">
+      <!--Container-->
+      <div class="container">
+         <!--Row-->
+         <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-9">
+               <div class="block-content gap-one-bottom-md text-center">
+                  <div class="block-title">
+                     <h1 class="uppercase">Stay in touch</h1>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--End row-->
+      </div>
+      <!--End container-->
+      <!--Container-->
+      <div class="container">
+         <div class="row justify-content-center">
+            <div class="col-12">
+               <ul class="block-social list-inline text-center">
+                  <li class="list-inline-item">
+                     <a href="https://www.youtube.com/channel/UCE7HSqVe0-fTumbJJn3S5hg"><i
+                           class="fa fa-youtube"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                     <a href="https://discordapp.com/invite/XWCB4B3"><i class="fa fa-discord"></i></a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!--End container-->
+   </section>
+   <!--End contact section-->
+   <footer class="pt-5 pb-5 footer">
+      <!--Container-->
+      <div class="container">
+         <div class="row justify-content-between align-items-center">
+            <div class="col-md-6">
+               <small class="small"><span>&copy; 2020 ModdedMinecraft.net - ModdedMinecraft.net is in no way affiliated
+                     with Mojang, AB. Image Credits: /u/kastaqt</span></small>
+            </div>
+         </div>
+      </div>
+      <!--End container-->
+   </footer><a class="block-top scroll" href="#wrapper"><i class="fa fa-angle-up"></i></a>
+   </div><!-- End wrapper-->
