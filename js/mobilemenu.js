@@ -65,10 +65,6 @@ $('.footer-activator').hover(function () {
 
 
 $(document).on('mousemove', function (e) {
-    $('body').css({
-        'cursor': 'default'
-    });
-
     if (data) {
         var xPos = e.pageX - 5;
         var yPos = e.pageY - 5;
@@ -102,6 +98,11 @@ $('.footer-activator').on('click', function () {
         activator.classList.add("active");
         overlay.classList.add("active");
         $('.feature').addClass('blackened');
+
+        $('.underlay').css({
+            'height': '0',
+            'width': '0',
+        });
     }
 })
 
@@ -114,6 +115,4 @@ $('.footer-overlay').on('click', function () {
     activator.classList.remove("active");
     overlay.classList.remove("active");
     $('.feature').removeClass('blackened');
-
-
 })

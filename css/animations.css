@@ -1,6 +1,5 @@
 body {
     overflow-y: hidden;
-    cursor: none;
 }
 
 .background-img img {
@@ -576,6 +575,7 @@ body {
     background: none;
     color: #fff;
     line-height: 4;
+    cursor: default;
 }
 
 .footer a {
@@ -615,4 +615,16 @@ body {
 
 .footer .right {
     float: right;
+}
+
+@media screen and (max-width: 756px) {
+    #footer {
+        width: 90vw;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .footer .line {
+        width: 100%;
+    }
 }
