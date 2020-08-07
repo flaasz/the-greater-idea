@@ -624,6 +624,10 @@ body {
         text-align: center;
     }
 
+    #footer.active {
+        height: 35vh;
+    }
+
     .footer .line {
         width: 100%;
     }
