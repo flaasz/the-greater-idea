@@ -63,25 +63,6 @@ $('.footer-activator').hover(function () {
     data = true;
 });
 
-
-$(document).on('mousemove', function (e) {
-    if (data) {
-        var xPos = e.pageX - 5;
-        var yPos = e.pageY - 5;
-        // console.log(xPos, yPos);
-        var translate = 'translate(' + xPos + 'px,' + yPos + 'px)';
-        $('.underlay').css({
-            'transform': translate,
-            'height': '10px',
-            'width': '10px',
-            'border-radius': '50%',
-            'opacity': 1
-        });
-    }
-
-});
-
-
 $('.footer-activator').on('click', function () {
     var footer = document.getElementById("footer");
     var activator = document.getElementsByClassName("footer-activator")[0];
@@ -116,3 +97,49 @@ $('.footer-overlay').on('click', function () {
     overlay.classList.remove("active");
     $('.feature').removeClass('blackened');
 })
+
+$('.first').on('click', function () {
+    var overlay = document.getElementsByClassName("feature-overlay")[0];
+
+    overlay.classList.add("active");
+    $('.feature').addClass('blackened');
+    $('.footer-activator').addClass('blackened');
+    $('.first-feature').addClass('active');
+
+})
+
+$('.feature-link').hover(function () {
+    data = false;
+    var link = $(this)[0].getBoundingClientRect();
+
+    var x_pos = (link.left);
+    var y_pos = (link.top);
+
+    var translate = 'translate(' + x_pos + 'px,' + y_pos + 'px)';
+
+    $('.underlay').css({
+        'transform': translate,
+        'width': link.width + 'px',
+        'height': link.height * 0.95 + 'px',
+        'opacity': 1,
+        'border-radius': '0'
+    });
+}, function () {
+    data = true;
+});
+
+$(document).on('mousemove', function (e) {
+    if (data) {
+        var xPos = e.pageX - 5;
+        var yPos = e.pageY - 5;
+        // console.log(xPos, yPos);
+        $('.underlay').css({
+            'transform': 'translate(' + xPos + 'px,' + yPos + 'px)',
+            'height': '10px',
+            'width': '10px',
+            'border-radius': '50%',
+            'opacity': 1
+        });
+    }
+
+});
