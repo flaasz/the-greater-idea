@@ -528,3 +528,21 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.main-header {
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+    text-transform: uppercase;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+@media screen and (max-width: 756px) {
+    .main-header {
+        top: 25px;
+    }
+} 
