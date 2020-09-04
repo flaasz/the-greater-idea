@@ -73,12 +73,14 @@ $('.footer-activator').on('click', function () {
         activator.classList.remove("active");
         overlay.classList.remove("active");
         $('.feature').removeClass('blackened');
+        $('.main-header').removeClass('blackened');
     } else {
         data = false;
         footer.classList.add("active");
         activator.classList.add("active");
         overlay.classList.add("active");
         $('.feature').addClass('blackened');
+        $('.main-header').addClass('blackened');
 
         $('.underlay').css({
             'height': '0',
@@ -96,6 +98,7 @@ $('.footer-overlay').on('click', function () {
     activator.classList.remove("active");
     overlay.classList.remove("active");
     $('.feature').removeClass('blackened');
+    $('.main-header').removeClass('blackened');
 })
 
 $('.first').on('click', function () {
@@ -104,6 +107,7 @@ $('.first').on('click', function () {
     overlay.classList.add("active");
     $('.feature').addClass('blackened');
     $('.footer-activator').addClass('blackened');
+    $('.main-header').addClass('blackened');
     $('.first-feature').addClass('active');
 
 })
