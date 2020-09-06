@@ -180,9 +180,28 @@ body {
     font-size: 80px;
     line-height: 1;
     margin: 0;
-    margin-right: 20px;
+    margin-right: 0px;
     overflow: hidden;
+    width: 0px;
+}
+
+.srvsingleline {
     width: 400px;
+}
+
+.section-2 .active .srv {
+    animation: srv 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) 500ms forwards;
+}
+
+@keyframes srv {
+    0% {
+        width: 0;
+        margin-right: 0;
+    }
+    100%{
+        width: 400px;
+        margin-right: 20px;
+    }
 }
 
 .section-2 .srvicon {
@@ -190,9 +209,24 @@ body {
     font-size: 160px;
     line-height: 1;
     margin: 0;
-    margin-left: 30px;
+    margin-left: 0px;
     overflow: hidden;
-    width: 160px;
+    width: 0px;
+}
+
+.section-2 .active .srvicon {
+    animation: srvicon 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) 500ms forwards;
+}
+
+@keyframes srvicon {
+    0% {
+        width: 0;
+        margin-left: 0;
+    }
+    100% {
+        width: 160px;
+        margin-left: 30px;
+    }
 }
 
 .section-2 .dsc {
@@ -243,9 +277,23 @@ body {
 }
 
 .vertical-line {
-    height: 140px;
+    height: 0px;
     width: 1px;
     background: #ffffff;
+}
+
+.feature-description.active .vertical-line {
+    animation: showline 500ms cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes showline {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 140px;
+}
 }
 
 .vertical-line-two {
@@ -289,7 +337,7 @@ body {
 }
 
 .blackened {
-    opacity: 0.15;
+    opacity: 0.1;
 }
 
 @keyframes fadeup {
@@ -403,20 +451,20 @@ body {
     height: 40vh;
 }
 
-.footer-overlay, .feature-overlay {
+.footer-overlay {
     transition: all 300ms cubic-bezier(0.215, 0.610, 0.355, 1);
     background: none;
     top: 100vh;
 }
 
-.footer-overlay.active, .feature-overlay.active {
+.footer-overlay.active {
     content: " ";
     position: absolute;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
-    background: #00000010;
+    background: #0000002b;
 }
 
 .footer .logo {
@@ -463,6 +511,22 @@ body {
     visibility: visible;
 }
 
+.first-feature.closed, .second-feature.closed, .third-feature.closed, .fourth-feature.closed {
+    animation: drop 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    visibility: visible;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 .feature-description {
     position: absolute;
     top: 0;
@@ -486,6 +550,8 @@ body {
     text-align: center;
     line-height: 2;
     margin-top: 20px;
+    overflow: hidden;
+    height: 0;
 }
 
 .feature-description .content p {
@@ -494,6 +560,18 @@ body {
     font-weight: 200;
 }
 
+.feature-description.active .content {
+    animation: showcontent 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 800ms forwards;
+}
+
+@keyframes showcontent {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 40%;
+    }
+}
 
 .feature-description .buttons {
     text-align: center;
@@ -509,7 +587,7 @@ body {
     padding: 5px 15px;
     font-size: 35px;
     font-weight: 100;
-    transition: 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .feature-description .buttons a:hover {
@@ -517,7 +595,73 @@ body {
 }
 
 .feature-description .footer {
-    margin-top: 50px;
+    background: none;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    z-index: 999999;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.feature-description.active .footer {
+    animation: showclosing 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) 1500ms forwards;
+}
+
+@keyframes showclosing {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.feature-description .footer .footer-close {
+    height: 80px;
+    width: 1px;
+    background: #fff;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.feature-description .footer .footer-close:first-child {
+    transform: rotate(45deg);
+}
+
+.feature-description.closed .footer .footer-close:first-child {
+    transform: rotate(-45deg);
+}
+
+.feature-description .footer .footer-close:last-child {
+    transform: rotate(-45deg);
+}
+
+.feature-description.closed .footer .footer-close:last-child {
+    transform: rotate(45deg);
+}
+
+.feature-description .footer:hover .footer-close {
+    background: #ee5253;
+}
+
+.feature-overlay {
+    transition: all 300ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    background: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.feature-overlay.active {
+    visibility: visible;
+    background: #0000002b;
 }
 
 .inner-hero {
@@ -545,3 +689,4 @@ body {
         top: 25px;
     }
 } 
+
