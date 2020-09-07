@@ -84,8 +84,8 @@ $('.footer-activator').on('click', function (e) {
 
         var xPos = e.pageX;
         var yPos = e.pageY;
-    
-    
+
+
         $('.underlay').css({
             'height': '0',
             'width': '0',
@@ -199,8 +199,8 @@ $('.closing').hover(function () {
     data = false;
     var link = $(this)[0].getBoundingClientRect();
 
-    var x_pos = (link.left-5);
-    var y_pos = (link.top-5);
+    var x_pos = (link.left - 5);
+    var y_pos = (link.top - 5);
 
     var translate = 'translate(' + x_pos + 'px,' + y_pos + 'px)';
 
@@ -224,14 +224,22 @@ $('.closing').on('click', function (e) {
     $('.footer-activator').removeClass('blackened');
     $('.main-header').removeClass('blackened');
     $('.first-feature').addClass('closed');
-    setTimeout(() => { $('.first-feature').removeClass('active'); }, 500);
+    setTimeout(() => {
+        $('.first-feature').removeClass('active');
+    }, 500);
     $('.second-feature').addClass('closed');
-    setTimeout(() => { $('.second-feature').removeClass('active'); }, 500);
+    setTimeout(() => {
+        $('.second-feature').removeClass('active');
+    }, 500);
     $('.third-feature').addClass('closed');
-    setTimeout(() => { $('.third-feature').removeClass('active'); }, 500);
+    setTimeout(() => {
+        $('.third-feature').removeClass('active');
+    }, 500);
     $('.fourth-feature').addClass('closed');
-    setTimeout(() => { $('.fourth-feature').removeClass('active'); }, 500);
-    
+    setTimeout(() => {
+        $('.fourth-feature').removeClass('active');
+    }, 500);
+
 
 
     var xPos = e.pageX;
