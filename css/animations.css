@@ -53,6 +53,7 @@ body {
 }
 
 .fadein {
+    text-align: center;
     opacity: 1;
     animation: fadedown 1s ease 0s normal forwards, hide 1500ms ease 2300ms forwards;
     -webkit-animation: fadedown 1s ease 0s normal forwards, hide 1500ms ease 2300ms forwards;
@@ -796,7 +797,19 @@ body {
 
 @media screen and (max-width: 756px) {
     .main-header {
-        top: 25px;
+        top: 1.5em;
+    }
+
+    .feature-description .content p {
+        font-size: 14px;
+    }
+
+    .feature-description .header {
+        transform: scale(0.5);
+    }
+
+    .fadein {
+        font-size: 15px;
     }
 } 
 
