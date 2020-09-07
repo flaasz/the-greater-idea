@@ -129,6 +129,72 @@ $('.first').on('click', function (e) {
     });
 })
 
+$('.second').on('click', function (e) {
+    var overlay = document.getElementsByClassName("feature-overlay")[0];
+
+    overlay.classList.add("active");
+    $('.feature').addClass('blackened');
+    $('.footer-activator').addClass('blackened');
+    $('.main-header').addClass('blackened');
+    $('.second-feature').removeClass('closed');
+    $('.second-feature').addClass('active');
+
+    var xPos = e.pageX;
+    var yPos = e.pageY;
+
+
+    $('.underlay').css({
+        'height': '0',
+        'width': '0',
+        'transform': 'translate(' + xPos + 'px,' + yPos + 'px)',
+        'border-radius': '50%',
+    });
+})
+
+$('.third').on('click', function (e) {
+    var overlay = document.getElementsByClassName("feature-overlay")[0];
+
+    overlay.classList.add("active");
+    $('.feature').addClass('blackened');
+    $('.footer-activator').addClass('blackened');
+    $('.main-header').addClass('blackened');
+    $('.third-feature').removeClass('closed');
+    $('.third-feature').addClass('active');
+
+    var xPos = e.pageX;
+    var yPos = e.pageY;
+
+
+    $('.underlay').css({
+        'height': '0',
+        'width': '0',
+        'transform': 'translate(' + xPos + 'px,' + yPos + 'px)',
+        'border-radius': '50%',
+    });
+})
+
+$('.fourth').on('click', function (e) {
+    var overlay = document.getElementsByClassName("feature-overlay")[0];
+
+    overlay.classList.add("active");
+    $('.feature').addClass('blackened');
+    $('.footer-activator').addClass('blackened');
+    $('.main-header').addClass('blackened');
+    $('.fourth-feature').removeClass('closed');
+    $('.fourth-feature').addClass('active');
+
+    var xPos = e.pageX;
+    var yPos = e.pageY;
+
+
+    $('.underlay').css({
+        'height': '0',
+        'width': '0',
+        'transform': 'translate(' + xPos + 'px,' + yPos + 'px)',
+        'border-radius': '50%',
+    });
+})
+
 $('.closing').hover(function () {
     data = false;
     var link = $(this)[0].getBoundingClientRect();
@@ -159,6 +225,12 @@ $('.closing').on('click', function (e) {
     $('.main-header').removeClass('blackened');
     $('.first-feature').addClass('closed');
     setTimeout(() => { $('.first-feature').removeClass('active'); }, 500);
+    $('.second-feature').addClass('closed');
+    setTimeout(() => { $('.second-feature').removeClass('active'); }, 500);
+    $('.third-feature').addClass('closed');
+    setTimeout(() => { $('.third-feature').removeClass('active'); }, 500);
+    $('.fourth-feature').addClass('closed');
+    setTimeout(() => { $('.fourth-feature').removeClass('active'); }, 500);
     
 
 

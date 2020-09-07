@@ -234,10 +234,24 @@ body {
     font-size: 80px;
     line-height: 1;
     margin: 0;
-    margin-left: 20px;
+    margin-left: 0px;
     overflow: hidden;
     width: 0;
-    animation: dscshow 500ms ease 4400ms forwards, dschide 500ms ease 5400ms forwards;
+}
+
+.section-2 .active .dsc {
+    animation: dsc 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) 500ms forwards;
+}
+
+@keyframes dsc {
+    0% {
+        width: 0;
+        margin-left: 0;
+    }
+    100% {
+        width: 427px;
+        margin-left: 20px;
+    }
 }
 
 .section-2 .dscicon {
@@ -245,11 +259,25 @@ body {
     font-size: 160px;
     line-height: 1;
     margin: 0;
-    margin-right: 30px;
+    margin-right: 0px;
     overflow: hidden;
     width: 0;
-    animation: dsclogoshow 500ms ease 4400ms forwards, dsclogohide 500ms ease 5400ms forwards;
     font-family: "Font Awesome 5 Free" !important;
+}
+
+.section-2 .active .dscicon {
+    animation: dscicon 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) 500ms forwards;
+}
+
+@keyframes dscicon {
+    0% {
+        width: 0;
+        margin-right: 0;
+    }
+    100% {
+        width: 140px;
+        margin-right: 30px;
+    }
 }
 
 .section-2 .frm {
@@ -259,7 +287,25 @@ body {
     margin: 0;
     overflow: hidden;
     width: 0;
-    animation: frmshow 500ms ease 5900ms forwards, frmhide 500ms ease 6900ms forwards;
+}
+
+.frmsingleline {
+    width: 456px;
+}
+
+.section-2 .active .frm {
+    animation: frm 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) 500ms forwards;
+}
+
+@keyframes frm {
+    0% {
+        width: 0;
+        margin-right: 0;
+    }
+    100% {
+        width: 456px;
+        margin-right: 20px;
+    }
 }
 
 .section-2 .frmicon {
@@ -269,7 +315,71 @@ body {
     margin: 0;
     overflow: hidden;
     width: 0;
-    animation: frmlogoshow 500ms ease 5900ms forwards, frmlogohide 500ms ease 6900ms forwards;
+}
+
+.section-2 .active .frmicon {
+    animation: frmicon 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) 500ms forwards;
+}
+
+@keyframes frmicon {
+    0% {
+        width: 0;
+        margin-left: 0;
+    }
+    100% {
+        width: 180px;
+        margin-left: 30px;
+    }
+}
+
+.section-2 .blg {
+    text-align: left;
+    font-size: 80px;
+    line-height: 1;
+    margin: 0;
+    margin-left: 0px;
+    overflow: hidden;
+    width: 0;
+}
+
+.section-2 .active .blg {
+    animation: blg 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) 500ms forwards;
+}
+
+@keyframes blg {
+    0% {
+        width: 0;
+        margin-left: 0;
+    }
+    100% {
+        width: 406px;
+        margin-left: 20px;
+    }
+}
+
+.section-2 .blgicon {
+    text-align: right;
+    font-size: 160px;
+    line-height: 1;
+    margin: 0;
+    margin-right: 0px;
+    overflow: hidden;
+    width: 0;
+}
+
+.section-2 .active .blgicon {
+    animation: blgicon 1000ms cubic-bezier(0.165, 0.84, 0.44, 1) 500ms forwards;
+}
+
+@keyframes blgicon {
+    0% {
+        width: 0;
+        margin-right: 0;
+    }
+    100% {
+        width: 162px;
+        margin-right: 30px;
+    }
 }
 
 .fa-discord:before {
@@ -464,7 +574,7 @@ body {
     height: 100vh;
     top: 0;
     left: 0;
-    background: #0000002b;
+    background: #ffffff0f;
 }
 
 .footer .logo {
@@ -661,7 +771,7 @@ body {
 
 .feature-overlay.active {
     visibility: visible;
-    background: #0000002b;
+    background: #ffffff0f;
 }
 
 .inner-hero {
