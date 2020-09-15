@@ -720,10 +720,18 @@ body {
     font-size: 35px;
     font-weight: 100;
     transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation: pulse 750ms ease-in-out infinite alternate;
 }
 
 .feature-description .buttons a:hover {
     color: #13181d;
+}
+
+@keyframes pulse {
+    100% {
+        font-size: 34px;
+    }
+
 }
 
 .feature-description .footer {
