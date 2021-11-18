@@ -121,7 +121,7 @@ body {
     width: 100vw;
     top: 100vh;
     animation: slideinfirst 1600ms cubic-bezier(0.215, 0.610, 0.355, 1) 2500ms forwards;
-    background: #13181d url("../img/noiseoverlay.png");
+    background: #13181d url("../img/noiseoverlay.webp");
 }
 
 @keyframes slideinfirst {
